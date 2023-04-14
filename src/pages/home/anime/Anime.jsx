@@ -9,7 +9,7 @@ import useFetch from '../../hooks/useFetch'
 const Anime = () => {
 
     const [endpoint, setEndpoint] = useState("movie")
-    const {data , loading} = useFetch(`/${endpoint}/anime`)
+    const {data , loading} = useFetch(`/genre/${mediaType}/anime`)
    
    
      const onTabChange =(tab)=>{
